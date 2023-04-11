@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.43fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1.5fr;
+    grid-template-areas: 
+    "sidebar header header header"
+    "sidebar main main anouncements"
+    "sidebar main main anouncements"
+    "sidebar main main trending";
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(100, 202, 168);
+}
+
+.main {
+    grid-area: main;
+    background-color: bisque;
+}
+
+.anouncements {
+    grid-area: anouncements;
+    background-color: blueviolet;
+}
+
+.trending {
+    grid-area: trending;
+    background-color: cadetblue;
+}
+
