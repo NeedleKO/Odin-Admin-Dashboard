@@ -24,6 +24,13 @@ header {
 .sidebar {
     grid-area: sidebar;
     background-color: rgb(100, 202, 168);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 2fr 1fr;
+    padding-right: 20px;
+    padding-left: 5px;
+
 }
 
 .main {
@@ -41,3 +48,16 @@ header {
     background-color: cadetblue;
 }
 
+.sidebar-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+}
+
+.logoName {
+    font-size: 25px;
+}
