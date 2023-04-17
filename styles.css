@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* white color for sidebar icons*/
@@ -26,29 +33,95 @@ header {
     background-color: #fefffe;
 }
 
+.upperHeaderPart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchSvg_searchBar {
+    display: flex;
+    align-items: center;
+}
+
 #searchIcon {
-    width: 20px;
-}
-
-#bellIcon {
-    width: 20px;
-}
-
-.upperHeaderWrapper {
-    display: flex;
-    justify-content:space-between;
-}
-
-.test {
-    padding-top: 20px;
-    padding-left: 30px;
-    display: flex;
-    gap: 5px;
+    width: 25px;
 }
 
 .input {
+    height: 25px;
     width: 30rem;
+    border-radius: 12px;
+    background-color: #e2e8f0;
+    border: none;
+
 }
+
+.bellimg_name_profilepic {
+    display: flex;
+    align-items: center;
+}
+
+#bellIcon {
+    width: 25px;
+}
+
+.upperRightProfilePic {
+    width: 50px;
+    border-radius: 100px;
+}
+
+.lowerHeaderPart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic_greeting_name {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.upperHeaderPart, .lowerHeaderPart {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.searchSvg_searchBar {
+    gap: 10px;
+}
+
+.bellimg_name_profilepic {
+    gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;
+    height: 40px;
+}
+
+.buttons > button {
+    width: 100px;
+    border-radius: 14px;
+    border: none;
+    background-color: #1992d4;
+    color: white;
+    font-weight: bolder;
+
+
+}
+
+.lowerLeftImg {
+    width: 70px;
+    border-radius: 100px;
+}
+
+.bigName {
+    display: flex;
+}
+
 
 .sidebar {
     grid-area: sidebar;
@@ -107,6 +180,7 @@ header {
 
 .lowerMenu {
     width: 30px;
+    padding-top: 30px;
 
 }
 
