@@ -23,9 +23,9 @@ body {
     grid-template-rows: 0.5fr 1fr 0.5fr 1.5fr;
     grid-template-areas: 
     "sidebar header header header"
-    "sidebar main main anouncements"
-    "sidebar main main anouncements"
-    "sidebar main main trending";
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main";
 }
 
 header {
@@ -143,28 +143,35 @@ header {
 
 .main {
     grid-area: main;
-    background-color: bisque;
+    background-color: #e3e9f0;
+    padding: 20px;
+    padding-top: 30px;
 }
 
 .main_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: 2fr 2fr 1.5fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    gap: 30px;
+    height: 100%;
+    padding: 30px;
+    
+
 }
 
-.anouncements {
-    grid-area: anouncements;
-    background-color: blueviolet;
+.inside_content {
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
-.trending {
-    grid-area: trending;
-    background-color: cadetblue;
-}
+
+
 
 .sidebar-flex {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 .logo {
@@ -209,4 +216,19 @@ header {
 /* sidebar icons color white */
 #privacy, #support, #settings, #communities, #tasks, #history, #messages, #profile, #home, .logo {
     filter: var(--main-filter);
+}
+
+.right-side {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.anouncements {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    background-color: #ffffff;
+}
+
+.main_title {
+    padding-left: 30px;
 }
