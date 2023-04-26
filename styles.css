@@ -253,3 +253,19 @@ header {
 .project_text {
     font-size: 15px;
 }
+
+.content_svg {
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 1.5rem; 
+    gap: 25px;
+
+    
+}
+
+.content_svg_img {
+    height: 26px;
+}
+
