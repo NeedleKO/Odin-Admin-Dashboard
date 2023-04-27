@@ -229,6 +229,8 @@ header {
     background-color: #fefeff;
     box-shadow: 1px 1px 1px 1px #DCDCDC;
     background-image: -webkit-linear-gradient(left, #f1b428, #f1b428 1.5%, transparent 1%, transparent 100%);
+
+    
     
 }
 
@@ -269,3 +271,47 @@ header {
     height: 26px;
 }
 
+.anounc_content {
+    width: 200px;
+    padding-top: 10px;
+}
+
+.anounc_text {
+    font-size: 16px;
+    color: #636363;
+}
+
+.anouncement_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.announcement {
+    padding-left: 50px;
+}
+
+.trending_img {
+    width: 80px;
+    border-radius: 150px;
+    border: 2px solid black;
+}
+
+.inside_content_trending {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.trending {
+    width: 300px;
+    margin-left: 50px;
+}
+
+.trending_text {
+    color: #636363;
+}
